@@ -1,4 +1,4 @@
->> Atomic Bomber Game
+> Atomic Bomber Game
 
 
 A simplified version of the Atomic Bomber game.
