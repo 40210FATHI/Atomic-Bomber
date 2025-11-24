@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="320.0" prefWidth="569.0" xmlns="http://javafx.com/javafx/17.0.2-ea"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SettingController">
+    <center>
+        <VBox alignment="CENTER" spacing="10">
+            <Label alignment="CENTER" text="mute sound:" textFill="#73726b">
+                <font>
+                    <Font size="14.0"/>
+                </font>
+            </Label>
+            <Button mnemonicParsing="false" onMouseClicked="#mute" text="mute" textFill="darkgoldenrod"/>
+            <Button mnemonicParsing="false" onMouseClicked="#unmute" text="unmute" textFill="darkgoldenrod"/>
+            <Label alignment="CENTER" text="Black and white:" textFill="#847979">
+                <font>
+                    <Font size="14.0"/>
+                </font>
+            </Label>
+            <Button mnemonicParsing="false" onMouseClicked="#WhiteBlack" text="B &amp; W" textFill="darkgoldenrod"/>
+            <Label alignment="CENTER" text="Changing the game control buttons:" textFill="#817474">
+                <font>
+                    <Font size="14.0"/>
+                </font>
+            </Label>
+            <Button mnemonicParsing="false" onMouseClicked="#changeButtons" text="change buttons"
+                    textFill="darkgoldenrod"/>
+            <Button mnemonicParsing="false" onMouseClicked="#back" text="back"/>
+        </VBox>
+    </center>
+</BorderPane>

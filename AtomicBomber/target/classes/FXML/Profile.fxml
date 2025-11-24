@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="360.0" prefWidth="569.0" xmlns="http://javafx.com/javafx/17.0.2-ea"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ProfileController">
+    <center>
+        <VBox alignment="CENTER" spacing="10">
+            <Accordion/>
+            <Label text="Change your username"/>
+            <TextField fx:id="newUsername" alignment="CENTER" maxWidth="185" promptText="New username"/>
+            <Button mnemonicParsing="false" onMouseClicked="#changeUsername" text="changing username"
+                    textFill="indigo"/>
+            <Label text="Change your password"/>
+            <TextField fx:id="newPassword" alignment="CENTER" maxWidth="185" promptText="New password"/>
+            <PasswordField fx:id="password" alignment="CENTER" maxWidth="185" promptText="Old password"/>
+            <Button mnemonicParsing="false" onMouseClicked="#changePassword" text="changing password"
+                    textFill="indigo"/>
+            <Button mnemonicParsing="false" onMouseClicked="#goToAvatarMenu" text="Go to avatar menu"
+                    textFill="indigo"/>
+            <HBox alignment="CENTER" spacing="10">
+                <Button mnemonicParsing="false" onMouseClicked="#back" text="back" textFill="indigo"/>
+                <Button mnemonicParsing="false" onMouseClicked="#logout" text="Logout" textFill="indigo"/>
+                <Button mnemonicParsing="false" onMouseClicked="#deleteAccount" text="Delete account"
+                        textFill="indigo"/>
+            </HBox>
+        </VBox>
+    </center>
+
+</BorderPane>

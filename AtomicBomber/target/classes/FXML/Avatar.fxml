@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<?import java.net.URL?>
+<BorderPane prefHeight="320.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/17.0.2-ea"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AvatarMenuController">
+    <center>
+        <VBox alignment="CENTER" spacing="10">
+            <Button mnemonicParsing="false" onMouseClicked="#getRandomImage" text="Random Avatar"/>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20">
+                <children>
+                    <ImageView fitHeight="150.0" fitWidth="150.0" onMouseClicked="#setAvatar" pickOnBounds="true"
+                               preserveRatio="true">
+                        <image>
+                            <Image url="@../Images/Avatar1.png"/>
+                        </image>
+                    </ImageView>
+                    <ImageView fitHeight="150.0" fitWidth="150.0" onMouseClicked="#setAvatar" pickOnBounds="true"
+                               preserveRatio="true">
+                        <image>
+                            <Image url="@../Images/Avatar2.png"/>
+                        </image>
+                    </ImageView>
+                    <ImageView fitHeight="150.0" fitWidth="150.0" onMouseClicked="#setAvatar" pickOnBounds="true"
+                               preserveRatio="true">
+                        <image>
+                            <Image url="@../Images/Avatar3.png"/>
+                        </image>
+                    </ImageView>
+                    <ImageView fitHeight="150.0" fitWidth="150.0" onMouseClicked="#setAvatar" pickOnBounds="true"
+                               preserveRatio="true">
+                        <image>
+                            <Image url="@../Images/Avatar4.png"/>
+                        </image>
+                    </ImageView>
+                </children>
+            </HBox>
+            <Label alignment="CENTER" text="Select the file from Windows:"/>
+            <Button alignment="CENTER" mnemonicParsing="false" onMouseClicked="#ChooseFile" text="Open your Files"/>
+            <Button alignment="CENTER" mnemonicParsing="false" onMouseClicked="#newWindows" text="drag and drop"/>
+            <Button alignment="CENTER" mnemonicParsing="false" onMouseClicked="#back" text="back"/>
+        </VBox>
+    </center>
+</BorderPane>
+
